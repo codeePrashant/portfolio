@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =============================================
+       META TAGS — Tell browsers and search engines
+       about your page
+  ============================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prashant Kushwaha – Frontend Developer Portfolio" />
+  <title>Prashant Kushwaha | Frontend Developer</title>
+
+  <!-- Google Fonts — Syne (headings) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Our main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =============================================
+       NAVIGATION BAR
+       - Fixed at the top so it's always visible
+       - Has a hamburger menu for mobile screens
+  ============================================= -->
+  <header id="navbar">
+    <nav class="nav-container">
+
+      <!-- Logo / Brand name -->
+      <a href="#hero" class="nav-logo">PK<span class="accent">.</span></a>
+
+      <!-- Desktop navigation links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#skills"  class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#github"  class="nav-link">GitHub</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger button (visible only on mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+  </header>
+
+
+  <!-- =============================================
+       HERO SECTION
+       - First thing visitors see
+       - Contains name, role, and CTA buttons
+  ============================================= -->
+  <section id="hero">
+
+    <!-- Decorative background grid lines -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <!-- Glowing orb decorations -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+
+      <!-- Small label above name -->
+      <p class="hero-greeting">👋 Hello, I'm</p>
+
+      <!-- Main heading with name -->
+      <h1 class="hero-name">
+        Prashant<br />
+        <span class="accent">Kushwaha</span>
+      </h1>
+
+      <!-- Animated role that types itself -->
+      <p class="hero-role">
+        <span id="typed-role"></span><span class="cursor">|</span>
+      </p>
+
+      <!-- Short one-liner -->
+      <p class="hero-tagline">
+        Self-taught frontend developer from Jharkhand, India.<br />
+        Building responsive websites & sharpening my skills every day.
+      </p>
+
+      <!-- Call-to-action buttons -->
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact"  class="btn btn-outline">Contact Me</a>
+      </div>
+
+      <!-- Social links -->
+      <div class="hero-socials">
+        <a href="https://github.com/codeePrashant" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+          <!-- GitHub SVG icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.55
+              0-.27-.01-.99-.01-1.94-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68
+              -1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96
+              .1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1
+              -.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 2.9-.39
+              c.98 0 1.97.13 2.9.39 2.2-1.5 3.17-1.19 3.17-1.19.63 1.59.23 2.76.11 3.05
+              .74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.7.41.36.78 1.07.78 2.15
+              0 1.55-.01 2.8-.01 3.18 0 .31.21.66.8.55C20.21 21.41 23.5 17.1 23.5 12
+              23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div><!-- /hero-content -->
+
+    <!-- Scroll down arrow -->
+    <a href="#about" class="scroll-arrow" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </a>
+
+  </section><!-- /hero -->
+
+
+  <!-- =============================================
+       ABOUT SECTION
+       - Who you are, your background, your goal
+  ============================================= -->
+  <section id="about" class="section">
+    <div class="container">
+
+      <!-- Section heading -->
+      <div class="section-header">
+        <span class="section-label">Get to know me</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Avatar / Photo placeholder -->
+        <div class="about-avatar" aria-hidden="true">
+          <div class="avatar-card">
+            <!-- Initials shown in place of a photo -->
+            <div class="avatar-initials">PK</div>
+            <!-- Info chips below the avatar -->
+            <div class="avatar-chips">
+              <span class="chip">📍 Jharkhand, India</span>
+              <span class="chip">🎂 22 years old</span>
+              <span class="chip">💻 Open to Internships</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About text -->
+        <div class="about-text">
+          <p>
+            Hi! I'm <strong>Prashant Kushwaha</strong>, a self-taught frontend developer who fell
+            in love with building things for the web. I'm currently deepening my JavaScript skills
+            and working on real-world projects to build a solid portfolio.
+          </p>
+          <p>
+            I enjoy making websites that look great on every device — from phones to wide monitors.
+            For me, coding is not just about making things work; it's about making them look
+            <em>beautiful</em> and feel <em>smooth</em>.
+          </p>
+          <p>
+            My goal is to land a <strong>frontend developer internship</strong> where I can
+            contribute, learn from experienced developers, and grow into a full-time role. I am
+            constantly learning something new every day.
+          </p>
+
+          <!-- Quick facts list -->
+          <ul class="about-facts">
+            <li>🚀 Currently mastering JavaScript</li>
+            <li>🌐 Building responsive, mobile-first websites</li>
+            <li>📚 Learning React & Node.js next</li>
+            <li>🤝 Actively seeking internship opportunities</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem;">Let's Connect</a>
+        </div>
+
+      </div><!-- /about-grid -->
+    </div>
+  </section><!-- /about -->
+
+
+  <!-- =============================================
+       SKILLS SECTION
+       - Shows current and upcoming skills
+       - Progress bars show proficiency level
+  ============================================= -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">What I know</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+
+      <div class="skills-wrapper">
+
+        <!-- Current Skills column -->
+        <div class="skills-column">
+          <h3 class="skills-col-title">Current Skills</h3>
+
+          <!-- Each skill bar: name + animated progress bar -->
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <!-- data-width tells JavaScript how far to animate the bar -->
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name">CSS3</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent">45%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="45"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name">Git</span>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="65"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name">GitHub</span>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-width="65"></div>
+            </div>
+          </div>
+
+        </div><!-- /skills-column (current) -->
+
+        <!-- Future Skills column -->
+        <div class="skills-column">
+          <h3 class="skills-col-title">Learning Next 🚀</h3>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name">React.js</span>
+              <span class="skill-badge">Coming Soon</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill skill-bar-future" data-width="10"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span class="skill-name">Node.js</span>
+              <span class="skill-badge">Coming Soon</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill skill-bar-future" data-width="5"></div>
+            </div>
+          </div>
+
+          <!-- Tools / Technologies badges -->
+          <h3 class="skills-col-title" style="margin-top: 2.5rem;">Tools & Tech</h3>
+          <div class="tech-badges">
+            <span class="tech-badge">VS Code</span>
+            <span class="tech-badge">GitHub</span>
+            <span class="tech-badge">Figma</span>
+            <span class="tech-badge">Chrome DevTools</span>
+            <span class="tech-badge">Responsive Design</span>
+            <span class="tech-badge">Flexbox</span>
+            <span class="tech-badge">CSS Grid</span>
+          </div>
+
+        </div><!-- /skills-column (future) -->
+
+      </div><!-- /skills-wrapper -->
+    </div>
+  </section><!-- /skills -->
+
+
+  <!-- =============================================
+       PROJECTS SECTION
+       - 6 project cards
+       - Each has tech tags, description, links
+  ============================================= -->
+  <section id="projects" class="section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">What I've built</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      </div>
+
+      <!-- Projects grid — 3 columns on desktop, 1 on mobile -->
+      <div class="projects-grid">
+
+        <!-- ── Project Card 1 ── -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon">🌐</div>
+            <div class="project-links">
+              <a href="https://github.com/codeePrashant" target="_blank" rel="noopener" class="icon-link" aria-label="Source code">
+                <!-- Code icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live demo">
+                <!-- External link icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">
+            A personal portfolio website built from scratch using only HTML, CSS, and JavaScript.
+            Fully responsive with smooth animations and a modern dark theme.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+        <!-- ── Project Card 2 ── -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon">🧮</div>
+            <div class="project-links">
+              <a href="https://github.com/codeePrashant" target="_blank" rel="noopener" class="icon-link" aria-label="Source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Calculator App</h3>
+          <p class="project-desc">
+            A fully functional calculator with a clean UI. Supports basic arithmetic operations,
+            keyboard input, and a clear history display.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+        <!-- ── Project Card 3 ── -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon">✅</div>
+            <div class="project-links">
+              <a href="https://github.com/codeePrashant" target="_blank" rel="noopener" class="icon-link" aria-label="Source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">To-Do App</h3>
+          <p class="project-desc">
+            A task management app that lets you add, complete, and delete tasks. Data is saved in
+            localStorage so your tasks survive a page refresh.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">localStorage</span>
+          </div>
+        </article>
+
+        <!-- ── Project Card 4 ── -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon">🌤️</div>
+            <div class="project-links">
+              <a href="https://github.com/codeePrashant" target="_blank" rel="noopener" class="icon-link" aria-label="Source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Weather App</h3>
+          <p class="project-desc">
+            A weather application that fetches real-time weather data from a public API and displays
+            temperature, humidity, and conditions for any city.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">API</span>
+          </div>
+        </article>
+
+        <!-- ── Project Card 5 ── -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon">🎬</div>
+            <div class="project-links">
+              <a href="https://github.com/codeePrashant" target="_blank" rel="noopener" class="icon-link" aria-label="Source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-desc">
+            A static UI clone of the Netflix landing page, focusing on pixel-perfect layout, custom
+            CSS animations, and fully responsive design across all screen sizes.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Responsive</span>
+          </div>
+        </article>
+
+        <!-- ── Project Card 6 ── -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon">📂</div>
+            <div class="project-links">
+              <a href="https://github.com/codeePrashant" target="_blank" rel="noopener" class="icon-link" aria-label="Source code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">JS Practice Repository</h3>
+          <p class="project-desc">
+            A curated collection of JavaScript exercises, mini-projects, and code snippets I write
+            while learning. Covers arrays, DOM, events, fetch API, and more.
+          </p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">DOM</span>
+            <span class="tag">ES6+</span>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section><!-- /projects -->
+
+
+  <!-- =============================================
+       GITHUB SECTION
+       - Encourages visitors to see your repos
+  ============================================= -->
+  <section id="github" class="section section-alt">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Open Source</span>
+        <h2 class="section-title">Find Me on <span class="accent">GitHub</span></h2>
+      </div>
+
+      <div class="github-card">
+
+        <!-- GitHub icon -->
+        <div class="github-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="64" height="64">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.55
+              0-.27-.01-.99-.01-1.94-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68
+              -1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96
+              .1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1
+              -.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 2.9-.39
+              c.98 0 1.97.13 2.9.39 2.2-1.5 3.17-1.19 3.17-1.19.63 1.59.23 2.76.11 3.05
+              .74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.7.41.36.78 1.07.78 2.15
+              0 1.55-.01 2.8-.01 3.18 0 .31.21.66.8.55C20.21 21.41 23.5 17.1 23.5 12
+              23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+        </div>
+
+        <div class="github-text">
+          <h3>@codeePrashant</h3>
+          <p>
+            Check out my repositories to see my projects, practice code, and learning journey.
+            I push code regularly as I work through new concepts and challenges.
+          </p>
+          <!-- GitHub stats chips -->
+          <div class="github-stats">
+            <div class="gh-stat">
+              <span class="gh-stat-num">6+</span>
+              <span class="gh-stat-label">Repositories</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-stat-num">Daily</span>
+              <span class="gh-stat-label">Commits</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-stat-num">Open</span>
+              <span class="gh-stat-label">Source</span>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://github.com/codeePrashant"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary github-btn"
+        >
+          View GitHub Profile →
+        </a>
+
+      </div><!-- /github-card -->
+
+    </div>
+  </section><!-- /github -->
+
+
+  <!-- =============================================
+       CONTACT SECTION
+       - Simple form for visitors to message you
+  ============================================= -->
+  <section id="contact" class="section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Get in touch</span>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="contact-wrapper">
+
+        <!-- Left side: contact info cards -->
+        <div class="contact-info">
+
+          <p class="contact-intro">
+            I'm always open to internship opportunities, collaborations, or just a friendly
+            conversation about web development. Feel free to reach out!
+          </p>
+
+          <div class="contact-card">
+            <span class="contact-card-icon">📧</span>
+            <div>
+              <p class="contact-card-label">Email</p>
+              <a href="mailto:prashant@example.com" class="contact-card-value">prashant@example.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-card-icon">📍</span>
+            <div>
+              <p class="contact-card-label">Location</p>
+              <p class="contact-card-value">Jharkhand, India</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-card-icon">💼</span>
+            <div>
+              <p class="contact-card-label">Status</p>
+              <p class="contact-card-value" style="color: #4ade80;">Open to Internships ✓</p>
+            </div>
+          </div>
+
+        </div><!-- /contact-info -->
+
+        <!-- Right side: contact form -->
+        <div class="contact-form-wrapper">
+          <!--
+            NOTE: This form uses JavaScript to handle submission.
+            To make it actually send emails, you can use a free service
+            like Formspree (https://formspree.io) — just replace the
+            action attribute with your Formspree endpoint URL.
+          -->
+          <form id="contact-form" class="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="e.g. Rahul Sharma"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g. rahul@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="e.g. Internship Opportunity"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary form-submit">
+              Send Message 🚀
+            </button>
+
+            <!-- Success / error feedback message shown by JavaScript -->
+            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+
+          </form>
+        </div><!-- /contact-form-wrapper -->
+
+      </div><!-- /contact-wrapper -->
+    </div>
+  </section><!-- /contact -->
+
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <span class="nav-logo">PK<span class="accent">.</span></span>
+          <p>Self-taught frontend developer.<br />Building one project at a time.</p>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <a href="https://github.com/codeePrashant" target="_blank" rel="noopener" class="footer-social-link">
+            GitHub → @codeePrashant
+          </a>
+        </div>
+
+      </div><!-- /footer-top -->
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>
+          Designed &amp; Built by <strong>Prashant Kushwaha</strong>
+          &nbsp;|&nbsp;
+          <span id="footer-year"></span>
+        </p>
+        <p class="footer-made-with">Made with ❤️ &amp; lots of ☕</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Our JavaScript file — loaded at the bottom so HTML loads first -->
+  <script src="script.js"></script>
+
+</body>
+</html>
