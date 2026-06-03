@@ -342,6 +342,24 @@ document.addEventListener('DOMContentLoaded', function () {
     // --- If validation passed, show success ---
     // In a real project, you would send the form data to a server here.
 
+
+// Form data Formspree ko bhejo
+var formData = new FormData(contactForm);
+fetch(contactForm.action, {
+  method: 'POST',
+  body: formData,
+  headers: { 'Accept': 'application/json' }
+}).then(function(response) {
+  if (response.ok) {
+    showFeedback('✅ Message sent! I will get back to you soon.', 'success');
+    contactForm.reset();
+  } else {
+    showFeedback('❌ Something went wrong. Try again!', 'error');
+  }
+});
+return; // Purana code nahi chalega
+
+
     showFeedback('✅ Message sent! I will get back to you soon.', 'success');
 
     // Reset all the fields to empty
